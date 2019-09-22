@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>different types of borders</title>
+        <style>
+            .main{
+                display:grid;
+                height:100%;
+                text-align: center;
+                grid-template-rows: auto 1fr auto;
+                grid-template-columns: repeat(auto-fill,minmax(240px, 1fr));
+            }
+            .box{
+                margin-bottom: 50px;
+            }
+            .boxes{
+                margin:40px auto;
+                width:180px;
+                height:180px;
+            }
+            code{
+                background-color: #dedede;
+                padding:5px 8px;
+                border-radius: 3px;
+            }
+            .auto{
+                background-color: #2ab1ce;
+                outline: 50px auto #a4ecfc;
+            }
+            .double{
+                background-color: #e60023;
+                outline:14px double #2bb673;
+                outline-offset:-20px;
+            }
+            .groove{
+                background-color: #f05855;
+                outline:14px groove white;
+                outline-offset:-15px;
+            }
+            .ridge{
+                background-color: #f24c5e;
+                outline:14px ridge #e60023;
+                outline-offset:-14px;
+            }
+            .dotted-1{
+                background-color: magenta;
+                outline:24px dotted #2bb673;
+                outline-offset:-12px;
+            }
+            .dotted-2{
+                background-color: magenta;
+                outline:40px dotted #2bb673;
+                outline-offset:-18px;
+            }
+            
+            .dashed{
+                background-color: #4267b2;
+                outline:40px dashed white;
+                outline-offset:-12px;
+            }
+            .outset{
+                background-color: smokewhite;
+                outline:14px outset #208bfd;
+                outline-offset:-24px;
+            }
+            .inset{
+                background-color: smokewhite;
+                outline:14px double #ff8b0e;
+                outline-offset:-2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="box">
+                <div class="boxes auto"></div>
+                <code>Auto Border</code>
+            </div>
+            <div class="box">
+                <div class="boxes double"></div>
+                <code>Double Border</code>
+            </div>
+            <div class="box">
+                <div class="boxes groove"></div>
+                <code>Groove Border</code>
+            </div>
+            <div class="box">
+                <div class="boxes ridge"></div>
+                <code>Ridge Border</code>
+            </div>
+            <div class="box">
+                <div class="boxes dashed"></div>
+                <code>Dashed Border</code>
+            </div>
+            <div class="box">
+                <div class="boxes dotted-1"></div>
+                <code>Dotted-1 border</code>
+            </div>
+            <div class="box">
+                <div class="boxes dotted-2"></div>
+                <code>Dotted-2 border</code>
+            </div>
+            <div class="box">
+                <div class="boxes outset"></div>
+                <code>Outset Border</code>
+            </div>
+            <div class="box">
+                <div class="boxes inset"></div>
+                <code>Inset Border</code>
+            </div>
+        </div>
+    </body>
+</html>
